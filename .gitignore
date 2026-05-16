@@ -27,6 +27,7 @@ share/python-wheels/
 MANIFEST
 /instance
 /__pycache__
+/.idea
 
 # PyInstaller
 #   Usually these files are written by a python script from a template
