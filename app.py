@@ -28,10 +28,14 @@ def get_all_users():
     users_list = User.query.all()
     return render_template('users.html', users_list=users_list)
 
-@app.route('/users/<id: int>')
+@app.route('/users/<int:pk>')
 def user_detail(pk):
     user = User.query.get(pk)
-    return render_template('users.html')
+
+    return render_template(
+        'users.html',
+        user=user
+    )
 
 
 @app.route('/book_create', methods=['post', 'get'])

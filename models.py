@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
-
+from sqlalchemy import ForeignKey
+from sqlalchemy.orm import Mapped, mapped_column
 
 db = SQLAlchemy()
 
